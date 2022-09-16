@@ -20,7 +20,7 @@
 
             <div class="col-12">
                 <h2> Datos Cliente </h2>
-                <form>
+                <form action="./pedido.php" method="POST">
                     <div class="mb-3">
                         <label for="nombre" class="form-label">Nombre</label>
                         <input type="text" class="form-control" id="nombre" name="nombre" aria-describedby="emailHelp">
