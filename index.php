@@ -10,11 +10,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
 </head>
-
 <body>
     <div class="container">
         <div class="row justify-content-start">
-            <div class="col-12">
+            <div class="col-12" align="center">
                 <h1> Restaurante la Macarena </h1>
             </div>
 
@@ -31,7 +30,7 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="direccion" class="form-label">Direcció<noframes></noframes></label>
+                        <label for="direccion" class="form-label">Dirección <noframes></noframes></label>
                         <input type="text" class="form-control" id="direccion" name="direccion" aria-describedby="emailHelp">
                     </div>
 
@@ -43,43 +42,32 @@
                     <h2> Datos Pedido </h2>
                     <div class="row justify-content-start">
                         <div class="col-6">
-                            <h2> Bebidas </h2>
-                            <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="bebida1" name="bebida1">
-                                <label class="form-check-label" for="bebida1">Jugo Hit</label>
-                            </div>
-
-                            <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="bebida2" name="bebida2">
-                                <label class="form-check-label" for="bebida2">Limonada</label>
-                            </div>
-
-                            <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="bebida3" name="bebida3">
-                                <label class="form-check-label" for="bebida2">Café</label>
-                            </div>
+                            <h4> Bebidas </h4>
+                            <select class="form-select" aria-label="Default select example" name="bebida"> 
+                                <option value="" disabled selected>Escoja la opción de bebida</option>
+                                <option value="Agua" id="agua">Agua</option>
+                                <option value="Gaseosa" id="gaseosa">Gaseosa</option>
+                                <option value="Jugo" id="jugo">Jugo Hit</option>
+                            </select>
                         </div>
 
                         <div class="col-6">
-                            <h2> Comidas </h2>
-                            <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="comida1" name="comida1">
-                                <label class="form-check-label" for="comida1">Hamburguesa</label>
-                            </div>
-
-                            <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="comida2" name="comida2">
-                                <label class="form-check-label" for="comida2">Perro Caliente</label>
-                            </div>
-                            <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="comida3" name="comida3">
-                                <label class="form-check-label" for="comida3">Pizza</label>
-                            </div>
+                            <h4> Comidas </h4>
+                            <select class="form-select" aria-label="Default select example" name="comida"> 
+                                <option value="" disabled selected>Escoja la opción de comida</option>
+                                <option value="Hamburguesa" id="hamburguesa">Hamburguesa</option>
+                                <option value="Perro Caliente" id="perro">Perro caliente</option>
+                                <option value="Helado" id="helado">Helado</option>
+                                <option value="Pollo" id="pollo">Pollo</option>
+                                <option value="Chuleta" id="chuleta">Chuleta de cerdo</option>
+                            </select>
                         </div>
                     </div>
-
-                    <div class="col-12" align="center">
-                        <button class="btn btn-primary">Enviar</button>
+                     <br>
+                    <div align="center">
+                        <br>
+                        <input class="btn btn-primary" type="submit" value="Enviar">
+                        <input class="btn btn-secondary" type="reset" value="Limpiar">
                     </div>
                 </form>
             </div>
